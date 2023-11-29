@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #163532;
+    color: #F9FAFA;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+p {
+    font-family: 'Inknut Antiqua', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    ;
+}
+
+.aboutUsImg {
+    width: 100px;
+    height: 100px;
+}
+#content1 {
+    display: flex;
+}
+#content2 {
+    display: flex;
+}
+#content3 {
+    display: flex;
+}
