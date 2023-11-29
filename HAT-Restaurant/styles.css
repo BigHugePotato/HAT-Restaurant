@@ -14,40 +14,96 @@ p {
     font-family: 'Inknut Antiqua', serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main {
-    height: 100vh;
+body {
+    height: 7300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slogan {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
 
 .aboutUsImg {
-    width: 100px;
-    height: 100px;
+    width: 720px;
+    height: 568px;
 }
 #content1 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
 }
 #content2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
 }
 #content3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.aboutUs {
+    padding: 50px;
+}
+
+
+
+#winterMenu {
     display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+#menus {
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+#ourTeam {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+#chefs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.chef img {
+    width: 360px;
+    height: 370px;
 }
