@@ -405,3 +405,38 @@ footer{
     margin-top: 1000px;
 
 }
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #f1f0ec;
+}
+
+.socials a i {
+  font-size: 25px;
+  transition: color 0.4s ease;
+}
+
+.social a:hover {
+  color: blueviolet;
+}
+
+.footer-bottom p {
+  font-size: 15px;
+  word-spacing: 3px;
+  text-transform: capitalize;
+  padding-top: 50px;
+  color: #d6d6d4;
+}
