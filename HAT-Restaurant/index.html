@@ -7,6 +7,8 @@
     integrity="your-integrity-code" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="buttons.js"></script>
+    
     
 </head>
 <body>
@@ -126,16 +128,35 @@
                     <select id="people">
                         <option value="1">1 person</option>
                         <option value="2" selected>2 people</option>
-                        <!-- Add more options here -->
+                        <option value="3">3 person</option>
+                        <option value="4">4 person</option>
+                        <option value="5">5 person</option>
+                        <option value="6">6 person</option>
+                        <option value="7">7 person</option>
+                        <option value="8">8 person</option>
+
                     </select>
                     
                     <label for="date">Date:</label>
                     <input type="date" id="date">
                     
-                    <label for="time">Time:</label>
-                    <input type="time" id="time">
+                <label for="time">Time:</label>
+                <div id="time-slots">
+                    <button type="button" class="time-slot" onclick="setActive(this)">17:00</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">17:30</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">18:00</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">18:30</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">19:00</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">19:30</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">20:00</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">20:30</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">21:00</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">21:30</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">22:00</button>
+                    <button type="button" class="time-slot" onclick="setActive(this)">22:30</button>
+                </div>
                     
-                    <button type="submit">Book Now</button>
+                    <button id="formButton" type="submit">Book Now</button>
                 </form>
             </div> 
             <div class="contact" style="border: 1px solid;" >
