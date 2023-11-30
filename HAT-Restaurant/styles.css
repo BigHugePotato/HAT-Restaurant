@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Martian+Mono:wght@800&family=Orbitron:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -20,20 +20,11 @@ body {
 
 
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
 .bg-img {
   
   background-image: url("images/food.jpg");
 
-  min-height: 380px;
+  min-height: 800px;
 
  
   background-position: center;
@@ -44,35 +35,86 @@ body {
   position: relative;
 }
 
-
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
+.topnav a {
+    display: block;
+    background-color: transparent;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+ margin:
+  
+  
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+ .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+       overflow: hidden;
+      background-color:transparent;
+    }
 
 
 .topnav {
   overflow: hidden;
-  background-color:transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 
-
-.topnav a {
-    
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
+.nav-links {
+  background-color: transparent;
+  margin: 30px;
+  display: flex; 
 }
+
+.nav-links a {
+  margin-right: 80px; 
+}
+
 
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
 }
+
+.topnav a.split1,
+.topnav a.split2 {
+  float: right;
+  color: white;
+  border-style: solid;
+  border-radius: 20px;
+ 
+}
+.topnav a.split3 {
+  float: right;
+   background-color: #435B5A;
+  color: white;
+  border-radius: 20px;
+}
+
+ .custom-font {
+            font-size: 60px;
+            background-color: transparent;
+            border: none;
+            vertical-align: middle;
+            font-family: 'Joti One', sans-serif;
+        }
 
 
 
