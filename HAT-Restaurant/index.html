@@ -95,35 +95,74 @@
 
     <section id="ourTeamSection" style="border: 1px solid;">
         <div id="ourTeam"><h1>Our Team Members</h1></div>
-        <div id="chefs" style="border: 1px solid;">
+        <div id="chefs">
             <div class="chef">
-                <img src="./images/Pimp.jpg" alt="Henry">
+                <img class="chefImg"  src="./images/Pimp.jpg" alt="Henry">
                 <div class="firstname"><h3>Henry</h3></div>
                 <div class="lastname"><h3>Kodehode</h3></div>
                 <div class="role"><h5>Souschef</h5></div>
             </div>
             <div class="chef">
-                <img src="./images/Sigar.jpg" alt="Adrian">
+                <img class="chefImg" src="./images/Sigar.jpg" alt="Adrian">
                 <div class="firstname"><h3>Adrian</h3></div>
                 <div class="lastname"><h3>Kodehode</h3></div>
                 <div class="role"><h5>Headchef</h5></div>
             </div>
             <div class="chef">
-                <img src="./images/Chef.jpg" alt="Tran">
+                <img class="chefImg" src="./images/Chef.jpg" alt="Tran">
                 <div class="firstname"><h3>Tran</h3></div>
                 <div class="lastname"><h3>Kodehode</h3></div>
                 <div class="role"><h5>Souschef</h5></div>
             </div>
         </div>
     </section>
-    <section id="bookATable" >
 
-    </section>
+
+
+    <div class="container" style="border: 4px black solid;">
+        <section id="bookATable" >
+            <div class="form" style="border: 1px solid;">
+                <h2>Book a table</h2>
+                <form>
+                    <label for="people">Number of people:</label>
+                    <select id="people">
+                        <option value="1">1 person</option>
+                        <option value="2" selected>2 people</option>
+                        <!-- Add more options here -->
+                    </select>
+                    
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time">
+                    
+                    <button type="submit">Book Now</button>
+                </form>
+            </div> 
+            <div class="contact" style="border: 1px solid;" >
+                <h2>Contact Us</h2>
+                <p>Email: book@table.tokyo</p>
+                <p>Phone: 55 55 55 55</p>
+                <h4>Address</h4>
+                <p>5000 Tokyo, Japan</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662975.709549531!2d138.45010349647058!3d35.504292255825526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sno!4v1701335069560!5m2!1sen!2sno" width="530" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
     <footer>
-       <p>Thormøhlens gate 47,</p>
-        <p>Tokyo 5000, Japan</p>
+        <div class="adress">
+            <p>Thormøhlens gate 47,</p>
+            <p>Tokyo 5000, Japan</p>
+        </div>
         <p>Tuesday to Sunday 17-24pm</p>
-      </div>
+      <div>
           <ul class="socials">
         <li><a href=https://www.facebook.com><i class="fa fa-facebook"></i></a></li>
         <li><a href=https://www.instagram.com><i class="fa fa-instagram"></i></a></li>

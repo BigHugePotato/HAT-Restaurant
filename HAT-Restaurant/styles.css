@@ -98,24 +98,28 @@ body {
 .aboutUsImg {
     width: 720px;
     height: 568px;
+    flex-shrink: 0;
 }
 #content1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-top: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #content2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-top: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #content3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-top: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .aboutUs {
@@ -123,6 +127,12 @@ body {
 }
 
 
+
+
+
+#menu {
+    margin-top: 100px;
+}
 
 #winterMenu {
     display: flex;
@@ -151,8 +161,138 @@ body {
 }
 
 #chefs{
+display: flex;
+width: 1440px;
+padding: 27px 33px;
+justify-content: center;
+align-items: center;
+gap: 46px;
+}
+
+.chef {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.chefImg {
+    width: 360px;
+    height: 370px;
+}
+
+.firstname, .lastname {
+    color: #F9FAFA;
+    font-family: Jockey One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.role {
+    color: #F9FAFA;
+    font-family: Jockey One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
 
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    margin-top: 50px;
+    margin-left: 0;
+}
+.container h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container p, 
+.container h2, 
+.container h4, 
+.container label, 
+.container button {
+    background-color: #435B5A;
+}
+#bookATable {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 1290px;
+    background-color: #435B5A;
+    padding: 50px;
+
+
+}
+.form {
+    display: flex;
+    width: 559px;
+    padding: 0px 49px 27px 49px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 44px;
+    background-color: #435B5A;
+
+
+}
+
+.form form {
+    background-color: #435B5A;
+    border: black 3px solid;
+    display: flex;
+    width: 460px;
+    height: 545px;
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+}
+
+.form select {
+    width: 50%;
+}
+
+.contact {
+
+    flex-direction: column;
+    align-items: center;
+    width: 730px;
+    background-color: #435B5A;
+    display: flex;
+    padding: 59px 115px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    }
+
+
+
+
+
+
+footer{
+    display: flex;
+    background-color: #435B5A;
+    width: 1440px;
+    height: 467px;
+    padding: 19px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    margin-top: 1000px;
+
+}
