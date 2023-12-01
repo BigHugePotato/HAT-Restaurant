@@ -118,11 +118,15 @@ body {
 
 
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+.container-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
+.menu-description {
+  text-align: center; /* Center the text */
+  
+}
 .menu-container {
     flex: 1;
     padding: 20px;
@@ -135,6 +139,11 @@ h1 {
     text-align: center;
     width: 100%;
     
+}
+
+
+.name {
+  font-size: 25px; /* Adjust the font size as needed */
 }
 
 

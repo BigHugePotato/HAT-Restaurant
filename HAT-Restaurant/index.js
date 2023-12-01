@@ -3,65 +3,99 @@
 
 let fiveCourseMenu = [
   {
-    course: "Amuse-bouche",
-    name: "Beetroot Tarte",
-    description: "Goat Cheese - Walnut - Microgreens - Balsamic Reduction",
-  },
-  {
-    course: "Butternut Velouté",
-    name: "Creamy Butternut Squash Soup",
-    description: "Toasted Pine Nuts - Sage - Truffle Oil - Parmesan Crisp",
-  },
-  {
-    course: "Seabass Citron",
-    name: "Pan-Seared Sea Bass",
-    description: "Mango Salsa - Avocado Mousse - Cilantro - Lime Drizzle",
-  },
-  {
-    course: "Duck à la Cerise",
-    name: "Sous-Vide Duck Breast",
+    course: "Apéritif",
+    name: "Sparkling Citrus Sorbet",
     description:
-      "Cherry Reduction - Parsnip Purée - Brussels Sprouts - Star Anise",
+      " A refreshing apéritif of sparkling citrus sorbet to tantalize the palate.",
+   
   },
   {
-    course: "Chocolate Eruption",
-    name: "Chocolate Lava Cake",
+    course: "Starter",
+    name: "Caprese Bruschetta",
     description:
-      "Raspberry Coulis - Vanilla Bean Ice Cream - Gold Leaf - Hazelnut Brittle",
+      "Crisp bruschetta topped with fresh tomatoes, creamy mozzarella, basil, and a drizzle of balsamic glaze",
+   
   },
-  
+  {
+    course: "Soup",
+    name: "Creamy Tomato Basil Soup",
+    description:
+      "Velvety soup blending ripe tomatoes and fragrant basil, enriched with a swirl of cream.",
+    
+  },
+  {
+    course: "Main",
+    name: "Grilled Chicken with Lemon-Herb Quinoa",
+    description:
+      "Succulent grilled chicken paired with light lemon-herb quinoa for a satisfying main course.",
+    
+  },
+  {
+    course: "Dessert",
+    name: "Decadent Chocolate Fondue with Fresh Berries",
+    description:
+      " A rich chocolate fondue served with fresh berries and bite-sized treats for a sweet finale",
+    
+  },
 ];
 
-// Sample eight-course menu data
+
 let eightCourseMenu = [
   {
-    course: "Amuse-bouche",
-    name: "Beetroot Tarte",
-    description: "Goat Cheese - Walnut - Microgreens - Balsamic Reduction",
-  },
-  {
-    course: "Butternut Velouté",
-    name: "Creamy Butternut Squash Soup",
-    description: "Toasted Pine Nuts - Sage - Truffle Oil - Parmesan Crisp",
-  },
-  {
-    course: "Seabass Citron",
-    name: "Pan-Seared Sea Bass",
-    description: "Mango Salsa - Avocado Mousse - Cilantro - Lime Drizzle",
-  },
-  {
-    course: "Duck à la Cerise",
-    name: "Sous-Vide Duck Breast",
+    course: "Appetizer",
+    name: "Amuse-Bouche",
     description:
-      "Cherry Reduction - Parsnip Purée - Brussels Sprouts - Star Anise",
+      "Beetroot Tartare - goat cheese - walnut - microgreens - balsamic reduction",
+    
   },
   {
-    course: "Chocolate Eruption",
-    name: "Chocolate Lava Cake",
+    course: "Starter",
+    name: "Octopus & Ember",
     description:
-      "Raspberry Coulis - Vanilla Bean Ice Cream - Gold Leaf - Hazelnut Brittle",
+      "Charred Octopus - sweet potato - paprika aioli - lemon zest - arugula",
+    
   },
-  // ... (your eight-course menu data)
+  {
+    course: "Soup",
+    name: "Butternut Velouté",
+    description:
+      "Creamy Butternut Squash Soup - toasted pine nuts - sage - truffle oil - parmesan crisp",
+    
+  },
+  {
+    course: "Fish",
+    name: "Seabass Citron",
+    description:
+      "Pan-Seared Sea Bass - mango salsa - avocado mousse - cilantro - lime drizzle",
+   
+  },
+  {
+    course: "Pasta",
+    name: "Tagliatelle Forestière",
+    description:
+      "Handmade Tagliatelle - wild mushrooms - thyme - garlic-infused olive oil - pecorin",
+    
+  },
+  {
+    course: "Main",
+    name: "Duck à la Cerise",
+    description:
+      "Sous-Vide Duck Breast - cherry reduction - parsnip purée - brussels sprouts - star anise",
+   
+  },
+  {
+    course: "Palate Cleanser:",
+    name: "Lemon Frost",
+    description: "Lemon Sorbet - mint - ginger crumble - elderflower syrup",
+    
+  },
+  {
+    course: "Dessert",
+    name: "Chocolate Eruption",
+    description:
+      "Decadent chocolate dessert, perhaps a lava cake or a rich chocolate mousse",
+   
+  },
 ];
 
 
@@ -75,7 +109,7 @@ function generateMenuItems(menuId, menuData) {
   menuData.forEach(function (item) {
     let menuItemHTML = "<div>";
     menuItemHTML += "<h2>" + item.course + "</h2>";
-    menuItemHTML += "<h3>" + item.name + "</h3>";
+    menuItemHTML += "<h3 class='name'>" + item.name + "</h3>";
     menuItemHTML += "<p>" + item.description + "</p>";
     menuItemHTML += "</div>";
 
