@@ -84,7 +84,7 @@ let eightCourseMenu = [
    
   },
   {
-    course: "Palate Cleanser:",
+    course: "Palate Cleanser",
     name: "Lemon Frost",
     description: "Lemon Sorbet - mint - ginger crumble - elderflower syrup",
     
@@ -102,18 +102,14 @@ let eightCourseMenu = [
 function generateMenuItems(menuId, menuData) {
   let menuContainer = document.getElementById(menuId);
 
- 
   menuContainer.innerHTML = "";
-
 
   menuData.forEach(function (item) {
     let menuItemHTML = "<div>";
-    menuItemHTML += "<h2>" + item.course + "</h2>";
-    menuItemHTML += "<h3 class='name'>" + item.name + "</h3>";
+    menuItemHTML += "<h2 class='name'>" + item.name + "</h2>"; 
     menuItemHTML += "<p>" + item.description + "</p>";
     menuItemHTML += "</div>";
 
-    
     menuContainer.innerHTML += menuItemHTML;
   });
 }
