@@ -3,39 +3,34 @@
 
 let fiveCourseMenu = [
   {
-    course: "Apéritif",
-    name: "Sparkling Citrus Sorbet",
+    course: "Appetizer",
+    name: "Amuse-Bouche",
     description:
-      " A refreshing apéritif of sparkling citrus sorbet to tantalize the palate.",
-   
-  },
-  {
-    course: "Starter",
-    name: "Caprese Bruschetta",
-    description:
-      "Crisp bruschetta topped with fresh tomatoes, creamy mozzarella, basil, and a drizzle of balsamic glaze",
-   
+      "Beetroot Tartare - goat cheese - walnut - microgreens - balsamic reduction",
   },
   {
     course: "Soup",
-    name: "Creamy Tomato Basil Soup",
+    name: "Butternut Velouté",
     description:
-      "Velvety soup blending ripe tomatoes and fragrant basil, enriched with a swirl of cream.",
-    
+      "Creamy Butternut Squash Soup - toasted pine nuts - sage - truffle oil - parmesan crisp",
+  },
+  {
+    course: "Fish",
+    name: "Seabass Citron",
+    description:
+      "Pan-Seared Sea Bass - mango salsa - avocado mousse - cilantro - lime drizzle",
   },
   {
     course: "Main",
-    name: "Grilled Chicken with Lemon-Herb Quinoa",
+    name: "Duck à la Cerise",
     description:
-      "Succulent grilled chicken paired with light lemon-herb quinoa for a satisfying main course.",
-    
+      "Sous-Vide Duck Breast - cherry reduction - parsnip purée - brussels sprouts - star anise",
   },
   {
     course: "Dessert",
-    name: "Decadent Chocolate Fondue with Fresh Berries",
+    name: "Chocolate Eruption",
     description:
-      " A rich chocolate fondue served with fresh berries and bite-sized treats for a sweet finale",
-    
+      "Chokolate Fondant, Sake icecream, wild berries, salt caramel, chokolate crunsh",
   },
 ];
 
@@ -93,8 +88,7 @@ let eightCourseMenu = [
     course: "Dessert",
     name: "Chocolate Eruption",
     description:
-      "Decadent chocolate dessert, perhaps a lava cake or a rich chocolate mousse",
-   
+      "Chokolate Fondant, Sake icecream, wild berries, salt caramel, chokolate crunsh",
   },
 ];
 

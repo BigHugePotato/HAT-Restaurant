@@ -34,7 +34,7 @@
                 <a href="#ABOUT" class="split1">ABOUT US</a>
             </div>
         </div>
-        <div class="centered-text" style="padding-top: 80px;">WELCOME TO HAT</div>
+        <div class="centered-text" style="padding-top: 80px;     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);">WELCOME TO HAT</div>
    </section>
 
 
@@ -47,8 +47,8 @@
       </div>
       <div id="content1">
         <div class="aboutUs">
-            <p>The Fusion of Paris and Tokyo</p>
-            <p>In the vibrant heart of Tokyo, our restaurant marries the sophistication of French cuisine with the delicate nuances of Japanese flavors. Each dish, embodying our 'less is more' philosophy, is a testament to minimalism's power in creating profound culinary experiences.</p>
+            <p class="aboutUsText">The Fusion of Paris and Tokyo</p>
+            <p class="aboutUsText">In the vibrant heart of Tokyo, our restaurant marries the sophistication of French cuisine with the delicate nuances of Japanese flavors. Each dish, embodying our 'less is more' philosophy, is a testament to minimalism's power in creating profound culinary experiences.</p>
         </div>
         <div class="aboutUsImg"><img class="aboutUsImg" src="./images/Dish2.jpg" alt="bilde" /></div>
       </div>
@@ -57,13 +57,13 @@
             <img class="aboutUsImg" src="./images/DiningRoom.jpg" alt="bilde" />
         </div>
         <div class="aboutUs">
-            <p>The Art of Simplicity</p>            
-            <p>We embrace the elegance of simplicity, where each ingredient is carefully chosen and every dish tells a story. Our minimalist approach highlights the purity of flavors, blending French and Japanese traditions to create a unique, sophisticated dining experience.</p></div>
+            <p class="aboutUsText">The Art of Simplicity</p>            
+            <p class="aboutUsText">We embrace the elegance of simplicity, where each ingredient is carefully chosen and every dish tells a story. Our minimalist approach highlights the purity of flavors, blending French and Japanese traditions to create a unique, sophisticated dining experience.</p></div>
       </div>
       <div id="content3">
         <div class="aboutUs">
-            <p>A Culinary Canvas of Flavors</p>
-            <p>Our menu is a celebration of seasonal ingredients, transformed through a fusion of traditional French techniques and Japanese culinary artistry. Here, every bite is an exploration, a harmonious blend of simplicity and depth in a sleek, modern setting.</p>
+            <p class="aboutUsText">A Culinary Canvas of Flavors</p>
+            <p class="aboutUsText">Our menu is a celebration of seasonal ingredients, transformed through a fusion of traditional French techniques and Japanese culinary artistry. Here, every bite is an exploration, a harmonious blend of simplicity and depth in a sleek, modern setting.</p>
         </div>
         <div ><img class="aboutUsImg" src="./images/foodArt.jpg" alt="bilde" /></div>
       </div>
@@ -121,26 +121,30 @@
 
 
 
-    <div class="container" style="border: 4px black solid;">
+    <div class="container">
         <section id="bookATable" >
-            <div class="form" style="border: 1px solid;">
+            <div class="form">
                 <h2>Book a table</h2>
                 <form>
-                    <label for="people">Number of people:</label>
-                    <select id="people">
-                        <option value="1">1 person</option>
-                        <option value="2" selected>2 people</option>
-                        <option value="3">3 person</option>
-                        <option value="4">4 person</option>
-                        <option value="5">5 person</option>
-                        <option value="6">6 person</option>
-                        <option value="7">7 person</option>
-                        <option value="8">8 person</option>
-
-                    </select>
-                    
-                    <label for="date">Date:</label>
-                    <input type="date" id="date">
+                    <div class="peopleDate">
+                        <div class="peopleBox">
+                            <label for="people">Number of people:</label>
+                            <select id="people">
+                                <option value="1">1 person</option>
+                                <option value="2" selected>2 persons</option>
+                                <option value="3">3 persons</option>
+                                <option value="4">4 persons</option>
+                                <option value="5">5 persons</option>
+                                <option value="6">6 persons</option>
+                                <option value="7">7 persons</option>
+                                <option value="8">8 persons</option>
+                            </select>
+                        </div>
+                        <div class="dateBox">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date">
+                        </div>
+                    </div>
                     
                 <label for="time">Time:</label>
                 <div id="time-slots">
@@ -161,7 +165,7 @@
                     <button id="formButton" type="submit">Book Now</button>
                 </form>
             </div> 
-            <div class="contact" style="border: 1px solid;" >
+            <div class="contact">
                 <h2>Contact Us</h2>
                 <p>Email: book@table.tokyo</p>
                 <p>Phone: 55 55 55 55</p>
