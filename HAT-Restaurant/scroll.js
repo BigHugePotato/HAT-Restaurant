@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   reservationsLink.addEventListener("click", (e) => {
     e.preventDefault();
-    scrollToSection("reservations");
+    scrollToSection("bookATable");
   });
 });
 
