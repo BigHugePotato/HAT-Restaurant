@@ -1,93 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Martian+Mono:wght@800&family=Orbitron:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&family=Martian+Mono:wght@800&family=Orbitron:wght@500&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #163532;
-    color: #F9FAFA;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #163532;
+  color: #f9fafa;
 }
 h1 {
-    font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 p {
-    font-family: 'Inknut Antiqua', serif;
+  font-family: "Inknut Antiqua", serif;
 }
 
 body {
-    height: 7300px;
+  height: 7300px;
 }
 
+.heroVideo {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
 
-
-.bg-img {
-  
-  background-image: url("images/food.jpg");
-
-  min-height: 800px;
-
- 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  
+#hero {
   position: relative;
+  overflow: hidden;
+  height: 800px;
+  margin: auto;
 }
 
 .topnav a {
-    display: block;
-    background-color: transparent;
+  display: block;
+  background-color: transparent;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
   font-size: 25px;
- margin:
-  
-  
 }
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 .sticky + .content {
   padding-top: 60px;
-}
+} */
 
-
-
- .centered-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 50px;
-       overflow: hidden;
-      background-color:transparent;
-    }
-
-
-.topnav {
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
   overflow: hidden;
   background-color: transparent;
+}
+
+.topnav {
+  position: fixed;
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Above other content */
+  background-color: transparent; /* Transparent background */
+  overflow: hidden;
+  width: 100%; /* Span the full width */
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav-links {
   background-color: transparent;
   margin: 30px;
-  display: flex; 
+  display: flex;
 }
 
 .nav-links a {
-  margin-right: 60px; 
+  margin-right: 60px;
 }
-
 
 .topnav a:hover {
   color: black;
@@ -99,24 +97,21 @@ body {
   color: white;
   border-style: solid;
   border-radius: 20px;
- 
 }
 .topnav a.split3 {
   float: right;
-   background-color: #435B5A;
+  background-color: #435b5a;
   color: white;
   border-radius: 20px;
 }
 
- .custom-font {
-            font-size: 60px;
-            background-color: transparent;
-            border: none;
-            vertical-align: middle;
-            font-family: 'Joti One', sans-serif;
-        }
-
-
+.custom-font {
+  font-size: 60px;
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+  font-family: "Joti One", sans-serif;
+}
 
 .container-menu {
   display: flex;
@@ -125,200 +120,167 @@ body {
 
 .menu-description {
   text-align: center; /* Center the text */
-  
 }
 .menu-container {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    background-color: transparent;
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  background-color: transparent;
 }
 
 h1 {
-    text-align: center;
-    width: 100%;
-    
+  text-align: center;
+  width: 100%;
 }
-
 
 .name {
   font-size: 25px; /* Adjust the font size as needed */
 }
 
-
-
-
-
-
-
-
-
-
-
 #slogan {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
 }
-
 
 .aboutUsImg {
-    width: 720px;
-    height: 568px;
-    flex-shrink: 0;
+  width: 720px;
+  height: 568px;
+  flex-shrink: 0;
 }
 #content1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-top: 50px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #content2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-top: 50px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #content3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-top: 50px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .aboutUs {
-    padding: 50px;
+  padding: 50px;
 }
 
-
-
-
-
 #menu {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 #winterMenu {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
 }
 
 #menus {
-    border: 4px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px;
-    height: 200px;
+  border: 4px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  height: 200px;
 }
-
-
-
-
-
-
 
 #ourTeam {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
 }
 
-#chefs{
-display: flex;
-width: 1440px;
-padding: 27px 33px;
-justify-content: center;
-align-items: center;
-gap: 46px;
+#chefs {
+  display: flex;
+  width: 1440px;
+  padding: 27px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
 }
 
 .chef {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .chefImg {
-    width: 360px;
-    height: 370px;
+  width: 360px;
+  height: 370px;
 }
 
-.firstname, .lastname {
-    color: #F9FAFA;
-    font-family: Jockey One;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.firstname,
+.lastname {
+  color: #f9fafa;
+  font-family: Jockey One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .role {
-    color: #F9FAFA;
-    font-family: Jockey One;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #f9fafa;
+  font-family: Jockey One;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
-
-
-
-
-
 
 .container {
-    display: flex;
-    justify-content: center;
-    width: 1440px;
-    margin-top: 50px;
-    margin-left: 0;
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  margin-top: 50px;
+  margin-left: 0;
 }
 .container h2 {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
-.container p, 
-.container h2, 
-.container h4, 
-.container label, 
+.container p,
+.container h2,
+.container h4,
+.container label,
 .container button {
-    background-color: #435B5A;
+  background-color: #435b5a;
 }
 #bookATable {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 1290px;
-    background-color: #435B5A;
-    padding: 50px;
-
-
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 1290px;
+  background-color: #435b5a;
+  padding: 50px;
 }
 .form {
-    display: flex;
-    width: 559px;
-    padding: 0px 49px 27px 49px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 44px;
-    background-color: #435B5A;
+  display: flex;
+  width: 559px;
+  padding: 0px 49px 27px 49px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 44px;
+  background-color: #435b5a;
 }
 
-
 #time-slots {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: transparent;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: transparent;
 }
 
 .time-slot {
@@ -333,25 +295,25 @@ gap: 46px;
 }
 
 .form form {
-    background-color: #435B5A;
-    border: black 1px solid;
-    display: flex;
-    width: 460px;
-    height: 545px;
-    padding: 30px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  background-color: #435b5a;
+  border: black 1px solid;
+  display: flex;
+  width: 460px;
+  height: 545px;
+  padding: 30px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 #formButton {
-    width: 180px;
-    height: 50px;
-    border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 select#people {
-  background-color: #435B5A;
+  background-color: #435b5a;
   border: 1px solid #163532;
   padding: 10px;
   border-radius: 5px;
@@ -366,53 +328,29 @@ select#people:focus {
 }
 
 .contact {
+  flex-direction: column;
+  align-items: center;
+  width: 730px;
+  background-color: #435b5a;
+  display: flex;
+  padding: 59px 115px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
 
-    flex-direction: column;
-    align-items: center;
-    width: 730px;
-    background-color: #435B5A;
-    display: flex;
-    padding: 59px 115px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    display: flex;
-    background-color: #163532;
-    width: 1440px;
-    height: 467px;
-    padding: 19px 8px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-    margin-top: 1000px;
-
+footer {
+  display: flex;
+  background-color: #163532;
+  width: 1440px;
+  height: 467px;
+  padding: 19px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-top: 1000px;
 }
 
 .socials {
