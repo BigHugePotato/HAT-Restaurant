@@ -23,6 +23,7 @@ p {
 
 body {
   height: 7300px;
+  
 }
 
 .heroVideo {
@@ -435,7 +436,6 @@ select#people:focus {
 
 footer {
   display: flex;
-  background-color: #163532;
   width: 1440px;
   height: 467px;
   padding: 19px 8px;
@@ -445,7 +445,11 @@ footer {
   gap: 8px;
   flex-shrink: 0;
   margin-top: 1000px;
+  border: 2px solid #000;
+  /* background-color: #435b5a; */
 }
+
+
 
 .socials {
   list-style: none;
