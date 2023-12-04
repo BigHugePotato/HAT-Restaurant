@@ -38,7 +38,7 @@ p {
 #hero {
   position: relative;
   overflow: hidden;
-  height: 800px;
+  height: 50rem;
   margin: auto;
 }
 
@@ -128,8 +128,8 @@ main{
 }
 
 .aboutUsImg {
-  width: 720px;
-  height: 568px;
+  width: 45rem;
+  height: 35.5rem;
   flex-shrink: 0;
   object-fit: cover;
 }
@@ -278,7 +278,7 @@ h1 {
 #chefs {
   border: 1px solid;
   display: flex;
-  width: 1440px;
+  width: 100vw;
   padding: 27px 33px;
   justify-content: center;
   align-items: center;
@@ -292,8 +292,8 @@ h1 {
 }
 
 .chefImg {
-  width: 360px;
-  height: 370px;
+  width: 22.5rem;
+  height: 23rem;
 }
 
 .firstname,
@@ -523,7 +523,6 @@ footer {
 
   #content1 {
     display: grid;
-    background-color: aqua;
     grid-template-columns: 1fr;
     align-items: center;
     margin-top: 50px;
