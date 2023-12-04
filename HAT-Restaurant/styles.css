@@ -556,16 +556,4 @@ footer {
 
 @media (max-width: 375px) {
 }
-.slogan {
-  width: 100%;
-}
 
-@media (max-width: 375px) {
-  html {
-    font-size: 60%;
-  }
-  .container {
-    text-align: center;
-    align-items: center;
-  }
-}
