@@ -48,9 +48,9 @@ p {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 20px;
+  padding: 1.25rem;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5;
 }
 
 .centered-text {
@@ -180,49 +180,49 @@ main{
 #winterMenu {
   display: flex;
   justify-content: center;
-  margin: 100px;
+  margin: 6rem;
 }
 
 #menus {
   border: 4px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 20px;
-  height: 200px;
+  margin: 1.25rem;
+  height: 12.5rem;
 }
 
 .winter-menu h1 {
-  font-size: 50px;
-  margin-bottom: 150px;
+  font-size: 3.1rem;
+  margin-bottom: 9rem;
 }
 
 .menu-description h3 {
-  margin-bottom: 100px;
+  margin-bottom: 5.5rem;
 }
 .menu-description {
   text-align: center;
 }
 
 .menu-description h2 {
-  margin-bottom: 15px;
+  margin-bottom: 1.8rem;
 }
 .menu-description h1 {
   font-size: 3em;
-  margin-bottom: 15px;
+  margin-bottom: 1.8rem;
 }
 .menu-container h2 {
   font-family: "Roboto Slab", serif;
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 1.8rem;
 }
 
 .menu-container h3 {
   font-family: "Roboto Slab", serif;
   font-size: 1em;
-  margin-bottom: 10px;
+  margin-bottom: 1.8rem;
 }
 .menu-container div {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 .container-menu {
   display: flex;
@@ -232,14 +232,14 @@ main{
 
 .menu-description {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   flex: 1;
 }
 
 .menu-container {
   flex: 1;
-  padding: 20px;
-  margin: 10px;
+  padding: 1.25rem;
+  margin: 0.6rem;
   background-color: transparent;
 }
 
@@ -249,7 +249,7 @@ main{
   top: 50%;
   left: 50%;
   width: 1px;
-  height: 1465px; /* Adjust the height of the line as needed */
+  height: 88rem; /* Adjust the height of the line as needed */
   background-color: #1c2020; /* Black line */
   transform: translate(-50%, -50%);
 }
@@ -260,29 +260,29 @@ h1 {
 }
 
 .name {
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 /*Our Team Members
 /*****************************************************************************/
 
 #ourTeamSection {
-  margin: 50px 0;
+  margin: 3.1rem 0;
 }
 
 #ourTeam {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 3.1rem;
 }
 
 #chefs {
   border: 1px solid;
   display: flex;
-  width: 100vw;
-  padding: 27px 33px;
+  width: 100%;
+  padding: 1.6rem 2rem;
   justify-content: center;
   align-items: center;
-  gap: 46px;
+  gap: 2.85rem;
 }
 
 .chef {
@@ -300,7 +300,7 @@ h1 {
 .lastname {
   color: #f9fafa;
   font-family: Jockey One;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -309,7 +309,7 @@ h1 {
 .role {
   color: #f9fafa;
   font-family: Jockey One;
-  font-size: 14px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -321,14 +321,14 @@ h1 {
 .container {
   display: flex;
   justify-content: center;
-  width: 1440px;
-  margin-top: 100px;
+  width: 100%;
+  margin-top: 6.25rem;
   margin-left: 0;
 }
 .container h2 {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .container p,
@@ -343,60 +343,60 @@ h1 {
   display: flex;
   justify-content: center;
   align-self: flex-start;
-  width: 1290px;
+  width: 80%;
   background-color: #435b5a;
-  border-radius: 25px;
-  padding: 30px;
+  border-radius: 1.5rem;
+  padding: 1.87rem;
 }
 .form {
   display: flex;
-  width: 559px;
-  padding: 0px 50px;
+  width: 43%;
+  padding: 0px 3.1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 38px;
+  gap: 2.37rem;
   background-color: #435b5a;
 }
 
 .contact {
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  width: 57%;
   background-color: #435b5a;
   display: flex;
-  padding: 30px 30px;
+  padding: 2rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.62rem;
 }
 
 .peopleDate {
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .peopleBox {
   display: flex;
   flex-direction: column;
   background-color: transparent;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .dateBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  gap: 20px;
+  gap: 1.25rem;
 }
 form label,
 form option,
 form input,
 form button {
   font-family: "Roboto Slab", serif;
-  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0.375rem 0.375rem rgba(0, 0, 0, 0.25);
 }
 
 #time-slots {
@@ -407,11 +407,11 @@ form button {
 
 .time-slot {
   background-color: transparent;
-  width: 90px;
-  height: 50px;
-  border-radius: 5px;
+  width: 5.6rem;
+  height: 3.1rem;
+  border-radius: 0.3rem;
   font-family: "Roboto Slab", serif;
-  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0.375rem 0.375rem rgba(0, 0, 0, 0.25);
 }
 
 .time-slot.active {
@@ -422,25 +422,25 @@ form button {
   background-color: #435b5a;
   border: 1px solid #163532;
   display: flex;
-  width: 460px;
-  height: 545px;
-  padding: 30px 0px;
+  width: 28.75rem;
+  height: 34rem;
+  padding: 1.875rem 0px;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 #formButton {
-  width: 180px;
-  height: 50px;
-  border-radius: 5px;
+  width: 11.25rem;
+  height: 3.1rem;
+  border-radius: 0.3rem;
 }
 
 select#people {
   background-color: #435b5a;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 0.625rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -456,14 +456,14 @@ select#people:focus {
 footer {
   display: flex;
   width: 100vw;
-  height: 467px;
-  padding: 19px 8px;
+  height: 29rem;
+  padding: 1rem 0.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   flex-shrink: 0;
-  margin-top: 100px;
+  margin-top: 6rem;
   border: none;
   background-color: #435b5a;
 }
@@ -473,34 +473,34 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 2rem;
   background-color: #435b5a;
 }
 
 .socials li {
-  margin: 0 10px;
+  margin: 0 0.6rem;
   background-color: #435b5a;
 }
 
 .socials a {
-  padding: 10px 10px;
+  padding: 0.6rem;
   text-decoration: none;
   color: #f1f0ec;
   background-color: #435b5a;
 }
 
 .socials a i {
-  font-size: 25px;
+  font-size: 1.5rem;
   transition: color 0.4s ease;
   background-color: #435b5a;
 }
 
 
 .footer-bottom p {
-  font-size: 15px;
-  word-spacing: 3px;
+  font-size: 1rem;
+  word-spacing: 0.2rem;
   text-transform: capitalize;
-  padding-top: 50px;
+  padding-top: 3rem;
   color: #d6d6d4;
   background-color: #435b5a;
 }
@@ -517,7 +517,6 @@ footer {
   #hero {
     position: relative;
     overflow: hidden;
-    height: 600px;
     margin: auto;
   }
 
@@ -525,22 +524,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    margin-top: 50px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   }
   #content2 {
     display: grid;
     grid-template-columns: 1fr;
     align-items: start;
-    margin-top: 50px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   }
   #content3 {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    margin-top: 50px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
   footer {
