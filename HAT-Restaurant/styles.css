@@ -462,8 +462,8 @@ footer {
   gap: 8px;
   flex-shrink: 0;
   margin-top: 100px;
-  border: 2px solid #000;
-  /* background-color: #435b5a; */
+  border: none;
+   background-color: #435b5a; 
 }
 
 .socials {
