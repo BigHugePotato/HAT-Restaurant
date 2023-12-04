@@ -66,9 +66,9 @@ p {
 
 .topnav {
   position: fixed;
-  top: 0; /* Stick to the top */
-  z-index: 1000; /* Above other content */
-  background-color: transparent; /* Transparent background */
+  top: 0; 
+  z-index: 1000; 
+  background-color: transparent; 
   overflow: hidden;
   width: 100%; /* Span the full width */
   display: flex;
@@ -84,11 +84,15 @@ p {
 
 .nav-links a {
   margin-right: 60px;
+   text-decoration: none;
+  position: relative;
 }
 
-.topnav a:hover {
-  color: black;
+
+.nav-links a:hover {
+  background-color: #435b5a;
 }
+
 
 .topnav a.split1,
 .topnav a.split2 {
@@ -438,6 +442,7 @@ select#people {
   cursor: pointer;
 }
 
+/* Style the select field when it has focus */
 select#people:focus {
   border-color: #ffffff;
   outline: none;
@@ -467,25 +472,30 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 30px;
+   background-color: #435b5a; 
 }
 
 .socials li {
   margin: 0 10px;
+   background-color: #435b5a; 
 }
 
 .socials a {
   padding: 10px 10px;
   text-decoration: none;
   color: #f1f0ec;
+   background-color: #435b5a; 
 }
 
 .socials a i {
   font-size: 25px;
   transition: color 0.4s ease;
+   background-color: #435b5a; 
 }
 
-.social a:hover {
+.socials a:hover {
   color: blueviolet;
+   background-color: #435b5a; 
 }
 
 .footer-bottom p {
@@ -494,8 +504,17 @@ footer {
   text-transform: capitalize;
   padding-top: 50px;
   color: #d6d6d4;
+   background-color: #435b5a; 
 }
 
+.address p{
+  background-color: #435b5a; 
+  
+}
+.address1 p{
+  background-color: #435b5a; 
+  
+}
 @media (max-width: 375px) {
 }
 .slogan {
