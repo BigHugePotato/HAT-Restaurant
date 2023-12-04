@@ -495,3 +495,19 @@ footer {
   padding-top: 50px;
   color: #d6d6d4;
 }
+
+@media (max-width: 375px) {
+}
+.slogan {
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    text-align: center;
+    align-items: center;
+  }
+}
