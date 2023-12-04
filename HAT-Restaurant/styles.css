@@ -21,7 +21,6 @@ p {
   text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
-
 /*Header
 /*****************************************************************************/
 
@@ -66,9 +65,9 @@ p {
 
 .topnav {
   position: fixed;
-  top: 0; 
-  z-index: 1000; 
-  background-color: transparent; 
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
   overflow: hidden;
   width: 100%; /* Span the full width */
   display: flex;
@@ -84,15 +83,13 @@ p {
 
 .nav-links a {
   margin-right: 60px;
-   text-decoration: none;
+  text-decoration: none;
   position: relative;
 }
-
 
 .nav-links a:hover {
   background-color: #435b5a;
 }
-
 
 .topnav a.split1,
 .topnav a.split2 {
@@ -119,6 +116,10 @@ p {
 /*Main
 /*****************************************************************************/
 
+main{
+    display: flex;
+    flex-direction: column;
+}
 #slogan {
   display: flex;
   justify-content: center;
@@ -275,6 +276,7 @@ h1 {
 }
 
 #chefs {
+  border: 1px solid;
   display: flex;
   width: 1440px;
   padding: 27px 33px;
@@ -453,7 +455,7 @@ select#people:focus {
 
 footer {
   display: flex;
-  width: 1440px;
+  width: 100vw;
   height: 467px;
   padding: 19px 8px;
   flex-direction: column;
@@ -463,7 +465,7 @@ footer {
   flex-shrink: 0;
   margin-top: 100px;
   border: none;
-   background-color: #435b5a; 
+  background-color: #435b5a;
 }
 
 .socials {
@@ -472,31 +474,27 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 30px;
-   background-color: #435b5a; 
+  background-color: #435b5a;
 }
 
 .socials li {
   margin: 0 10px;
-   background-color: #435b5a; 
+  background-color: #435b5a;
 }
 
 .socials a {
   padding: 10px 10px;
   text-decoration: none;
   color: #f1f0ec;
-   background-color: #435b5a; 
+  background-color: #435b5a;
 }
 
 .socials a i {
   font-size: 25px;
   transition: color 0.4s ease;
-   background-color: #435b5a; 
+  background-color: #435b5a;
 }
 
-.socials a:hover {
-  color: blueviolet;
-   background-color: #435b5a; 
-}
 
 .footer-bottom p {
   font-size: 15px;
@@ -504,17 +502,58 @@ footer {
   text-transform: capitalize;
   padding-top: 50px;
   color: #d6d6d4;
-   background-color: #435b5a; 
+  background-color: #435b5a;
 }
 
-.address p{
-  background-color: #435b5a; 
-  
+.address p {
+  background-color: #435b5a;
 }
-.address1 p{
-  background-color: #435b5a; 
-  
+.address1 p {
+  background-color: #435b5a;
 }
+
+
+@media (max-width: 1024px) {
+  #hero {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    margin: auto;
+  }
+
+  #content1 {
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #content2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    margin-top: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #content3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+
+
+
+
+/* Additional responsive adjustments as needed */
+
 @media (max-width: 375px) {
 }
 .slogan {
