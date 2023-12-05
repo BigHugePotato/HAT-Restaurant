@@ -42,6 +42,24 @@ p {
   margin: auto;
 }
 
+
+   .navbar {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: inline-block;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+    }
 .topnav a {
   display: block;
   background-color: transparent;
@@ -69,7 +87,7 @@ p {
   z-index: 1000;
   background-color: transparent;
   overflow: hidden;
-  width: 100%; /* Span the full width */
+  width: 100%; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -279,7 +297,7 @@ h1 {
 }
 
 #chefs {
-  border: 1px solid;
+  /* border: 1px solid; */
   display: flex;
   width: 100%;
   padding: 1.6rem 2rem;
@@ -377,7 +395,7 @@ h1 {
 .peopleDate {
   background-color: transparent;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   gap: 2.5rem;
 }
 
@@ -552,106 +570,145 @@ footer {
 @media (max-width: 375px) {
   
   
- #content1 .aboutUs {
-  order: 2; 
+#content1, #content2, #content3 {
+  display: grid;
+  grid-template-columns: 1fr; 
 }
 
-#content1 .aboutUsImg {
-  order: 1; 
+.aboutUs, .aboutUsImg {
+  width: 100%;
 }
 
-#content1 {
-    grid-template-columns: 1fr; 
-  }
+#content1 .aboutUs { order: 2; }
+#content1 .aboutUsImg { order: 1; }
 
-  
-  #content3 .aboutUs {
-  order: 2;
+#content2 .aboutUs, #content3 .aboutUs {
+  width: 100%;
+  order: 1;
 }
 
-
-#content3 .aboutUsImg {
-  order: 1; 
+#content2 .aboutUsImg, #content3 .aboutUsImg {
+  width: 100%;
 }
 
-#content3 {
-    grid-template-columns: 1fr; 
-}
-#menus {
-  border: 4px solid black;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  margin: 20px;
-  padding: 20px; /* Add some padding for spacing */
-}
-
-.winter-menu h1 {
-  font-size: 50px;
-  margin-bottom: 20px; /* Adjust margin as needed */
-}
-
-.menu-description h3 {
-  margin-bottom: 20px; /* Adjust margin as needed */
-}
-
-.menu-description {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.menu-description h2 {
-  margin-bottom: 15px;
-}
-
-.menu-description h1 {
-  font-size: 3em;
-  margin-bottom: 15px;
-}
-
-.menu-container h2 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.menu-container h3 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-.menu-container div {
-  margin-bottom: 30px;
-}
 
 .container-menu {
-  position: relative;
+  display:block;
+  
 }
 
 .container-menu::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
   width: 1px;
-  height: 100%; /* Adjust the height of the line as needed */
-  background-color: #1c2020; /* Black line */
-  transform: translateX(-50%);
+  height: 0;
+  background-color: #1c2020; 
+  transform: translate(-50%, -50%);
 }
-
-h1 {
+#ourTeamSection{
+  display:block;
+}
+#ourTeamSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 100%;
 }
 
-.name {
-  font-size: 25px;
+#chefs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chefImg {
+  width: 360px;
+  height: 370px;
+}
+
+.firstname,
+.lastname,
+.role {
+  color: #f9fafa;
+  font-family: Jockey One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 
+ 
+        
+       
+      
+     .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    margin-left: 200px; 
+    background-color: transparent;
+     height: 100vh; /* Adjust to your preference */
+    opacity: 1; /* Ensure full visibility */
+    transform: translateY(-100%); 
+     transition: transform 0.s ease-in-out;
+   }  
+    
+   
+   .nav-links.show {
+    display: flex;
+    transform: translateY(0);
+    
+  } 
+
+   .nav-links a {
+    margin: 5px 0;  Adjust spacing between links 
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+  }    
+    
+
+  /* .navbar a {
+        display: none;
+      }    */
 
 
 
-}
 
+      .menu-icon {
+        display: block;
+        margin-right: 30px;
+        background-color: transparent;
+      }
+
+      .menu-icon div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+
+      .menu-icon.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .menu-icon.active div:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-icon.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+      
+    }

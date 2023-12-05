@@ -113,3 +113,12 @@ generateMenuItems("five-course-menu", fiveCourseMenu);
 
 
 generateMenuItems("eight-course-menu", eightCourseMenu);
+
+
+function toggleMenu() {
+  const menuIcon = document.querySelector(".menu-icon");
+  menuIcon.classList.toggle("active");
+
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("show");
+}
