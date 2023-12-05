@@ -580,6 +580,7 @@ footer {
 
 
 @media (max-width: 375px) {
+  
   /* Content Styling */
   #content1, #content2, #content3 {
     display: grid;
