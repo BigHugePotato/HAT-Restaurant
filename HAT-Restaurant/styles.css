@@ -581,7 +581,6 @@ footer {
 
 @media (max-width: 375px) {
   
-  /* Content Styling */
   #content1, #content2, #content3 {
     display: grid;
     grid-template-columns: 1fr; 
@@ -720,5 +719,59 @@ footer {
     background-size: cover;
     background-position: left center;
   }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    margin-top: 2.25rem;
+  }
+  .container h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+  
+  #bookATable {
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+  }
+  
+  .contact {
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  .form form {
+    height: fit-content;
+    width: 100%;
+    gap: 1rem;
+  }
+  .infobox {
+    padding: 1rem 0 0 0;
+  }
+  .peopleDate {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .peopleBox {
+    gap: 1rem;
+  }
+  .dateBox {
+    gap: 1rem;
+  }
+  #time-slots {
+    grid-template-columns: 1fr 1fr;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
