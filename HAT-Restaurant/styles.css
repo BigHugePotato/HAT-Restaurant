@@ -579,7 +579,7 @@ footer {
 
 
 @media (max-width: 375px) {
-  
+
   
 #content1, #content2, #content3 {
   display: grid;
@@ -682,20 +682,12 @@ footer {
   } 
 
    .nav-links a {
-    margin: 5px 0;  Adjust spacing between links 
+    margin: 5px 0;
     padding: 1em;
     text-decoration: none;
     color: white;
   }    
     
-
-  /* .navbar a {
-        display: none;
-      }    */
-
-
-
-
       .menu-icon {
         display: block;
         margin-right: 30px;
@@ -722,10 +714,8 @@ footer {
         transform: rotate(45deg) translate(-5px, -6px);
       }
       
-    }
-.name {
-  font-size: 25px;
-}
+
+
 
 
 
@@ -742,7 +732,8 @@ footer {
 
 .container {
   flex-direction: column;
-  width: 100%;
+  width: 95%;
+  align-self: center;
   margin-top: 2.25rem;
 }
 .container h2 {
@@ -799,3 +790,4 @@ iframe {
 
 }
 
+}
