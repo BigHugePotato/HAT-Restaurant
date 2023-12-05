@@ -578,216 +578,146 @@ footer {
 
 
 
+
 @media (max-width: 375px) {
+  /* Content Styling */
+  #content1, #content2, #content3 {
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
 
-  
-#content1, #content2, #content3 {
-  display: grid;
-  grid-template-columns: 1fr; 
-}
+  .aboutUs, .aboutUsImg {
+    width: 100%;
+  }
 
-.aboutUs, .aboutUsImg {
-  width: 100%;
-}
+  #content1 .aboutUs { order: 2; }
+  #content1 .aboutUsImg { order: 1; }
 
-#content1 .aboutUs { order: 2; }
-#content1 .aboutUsImg { order: 1; }
+  #content2 .aboutUs, #content3 .aboutUs {
+    width: 100%;
+    order: 1;
+  }
 
-#content2 .aboutUs, #content3 .aboutUs {
-  width: 100%;
-  order: 1;
-}
+  #content2 .aboutUsImg, #content3 .aboutUsImg {
+    width: 100%;
+  }
 
-#content2 .aboutUsImg, #content3 .aboutUsImg {
-  width: 100%;
-}
+  /* Menu Container Styling */
+  .container-menu {
+    display: block;
+  }
 
+  .container-menu::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 0;
+    background-color: #1c2020; 
+    transform: translate(-50%, -50%);
+  }
 
-.container-menu {
-  display:block;
-  
-}
+  /* Our Team Section Styling */
+  #ourTeamSection {
+    display: block;
+  }
 
-.container-menu::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1px;
-  height: 0;
-  background-color: #1c2020; 
-  transform: translate(-50%, -50%);
-}
-#ourTeamSection{
-  display:block;
-}
-#ourTeamSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  #ourTeamSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-#chefs {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+  #chefs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.chef {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .chef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.chefImg {
-  width: 360px;
-  height: 370px;
-}
+  .chefImg {
+    width: 360px;
+    height: 370px;
+  }
 
-.firstname,
-.lastname,
-.role {
-  color: #f9fafa;
-  font-family: Jockey One;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+  .firstname, .lastname, .role {
+    color: #f9fafa;
+    font-family: Jockey One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-
- 
-        
-       
-      
-     .nav-links {
+  /* Navigation Links Styling */
+  .nav-links {
     display: none;
     flex-direction: column;
     position: fixed;
     top: 10%;
     margin-left: 200px; 
     background-color: transparent;
-     height: 100vh; /* Adjust to your preference */
-    opacity: 1; /* Ensure full visibility */
+    height: 100vh; 
+    opacity: 1; 
     transform: translateY(-100%); 
-     transition: transform 0.s ease-in-out;
-   }  
-    
-   
-   .nav-links.show {
+    transition: transform 0.s ease-in-out;
+  }
+
+  .nav-links.show {
     display: flex;
     transform: translateY(0);
-    
-  } 
+  }
 
-   .nav-links a {
-    margin: 5px 0;
+  .nav-links a {
+    margin: 5px 0; 
     padding: 1em;
     text-decoration: none;
     color: white;
-  }    
-    
-      .menu-icon {
-        display: block;
-        margin-right: 30px;
-        background-color: transparent;
-      }
+  }
 
-      .menu-icon div {
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
+  /* Hamburger Menu Styling */
+  .menu-icon {
+    display: block;
+    margin-right: 30px;
+    background-color: transparent;
+  }
 
-      .menu-icon.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-      }
+  .menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
 
-      .menu-icon.active div:nth-child(2) {
-        opacity: 0;
-      }
+  .menu-icon.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
 
-      .menu-icon.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-      }
-      
+  .menu-icon.active div:nth-child(2) {
+    opacity: 0;
+  }
 
+  .menu-icon.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 
+  /* Hero Section Styling */
+  .heroVideo {
+    display: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
-  flex-direction: column;
-  width: 95%;
-  align-self: center;
-  margin-top: 2.25rem;
-}
-.container h2 {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem;
+  #hero {
+    background-image: url("./images/food1.avif");
+    background-size: cover;
+    background-position: left center;
+  }
 }
 
-#bookATable {
-  align-self: center;
-  flex-direction: column;
-  width: 100%;
-}
-.form {
-  width: 100%;
-  padding: 0;
-  gap: 1rem;
-}
-
-.contact {
-  width: 100%;
-  padding: 1rem 0;
-  gap: 1rem;
-}
-.form form {
-  height: fit-content;
-  width: 100%;
-  gap: 1rem;
-}
-.infobox {
-  padding: 1rem 0 0 0;
-}
-.peopleDate {
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-.peopleBox {
-  gap: 1rem;
-}
-.dateBox {
-  gap: 1rem;
-}
-#time-slots {
-  grid-template-columns: 1fr 1fr;
-}
-iframe {
-  width: 100%;
-  height: auto;
-}
-
-
-
-
-
-}
-
-}
