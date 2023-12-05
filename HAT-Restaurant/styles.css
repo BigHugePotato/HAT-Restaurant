@@ -383,15 +383,32 @@ h1 {
 .contact {
   flex-direction: column;
   align-items: center;
-  width: 57%;
+  width: 50%;
   background-color: #435b5a;
   display: flex;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.62rem;
+  padding-bottom: 1rem;
+  justify-content: start;
+  gap: 2.37rem;
 }
-
+.form form {
+  background-color: #435b5a;
+  border: 1px solid #163532;
+  display: flex;
+  width: 28.75em;
+  height: 34em;
+  padding: 1.875em 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.infobox {
+  gap: 0.62rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #435b5a;
+  padding: 1.875rem 0;
+}
 .peopleDate {
   background-color: transparent;
   display: grid;
@@ -439,17 +456,7 @@ form button {
   background-color: #163532;
 }
 
-.form form {
-  background-color: #435b5a;
-  border: 1px solid #163532;
-  display: flex;
-  width: 28.75rem;
-  height: 34rem;
-  padding: 1.875rem 0px;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-}
+
 
 #formButton {
   width: 11.25rem;
@@ -465,10 +472,14 @@ select#people {
   cursor: pointer;
 }
 
-/* Style the select field when it has focus */
 select#people:focus {
   border-color: #ffffff;
   outline: none;
+}
+
+iframe {
+  width: 25rem;
+  height: 15rem;
 }
 
 /*Footer
@@ -712,3 +723,79 @@ footer {
       }
       
     }
+.name {
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2.25rem;
+}
+.container h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+#bookATable {
+  align-self: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form {
+  width: 100%;
+  padding: 0;
+  gap: 1rem;
+}
+
+.contact {
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.form form {
+  height: fit-content;
+  width: 100%;
+  gap: 1rem;
+}
+.infobox {
+  padding: 1rem 0 0 0;
+}
+.peopleDate {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.peopleBox {
+  gap: 1rem;
+}
+.dateBox {
+  gap: 1rem;
+}
+#time-slots {
+  grid-template-columns: 1fr 1fr;
+}
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+}
+
