@@ -176,12 +176,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-top: 3.125em; /* 50px/16px */
+  margin-top: 3.125rem;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 .aboutUs {
-  padding: 3.125em;
+  padding: 3.125rem;
 }
 
 /*Menu
@@ -290,7 +290,7 @@ h1 {
 }
 
 #chefs {
-  /* border: 1px solid; */
+  border: 1px solid;
   display: flex;
   width: 100%;
   padding: 1.6rem 2rem;
@@ -306,8 +306,10 @@ h1 {
 }
 
 .chefImg {
-  width: 22.5rem;
-  height: 23rem;
+  /* width: 22.5rem;
+  height: 23rem; */
+  height: auto;
+  width: 100%;
 }
 
 .firstname,
@@ -544,26 +546,48 @@ footer {
     margin: auto;
   }
 
-  #content1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
+  .heroVideo {
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left center;
   }
-  #content2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: start;
+
+  .aboutUsImg {
+    width: 32rem;
+    height: 23rem;
+
   }
-  #content3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
+  .chefImg {
+      height: auto;
+      width: 100%;
+      }
+      
+      #bookATable {
+        justify-content: space-evenly;
+        width: 90%;
+        padding: 1rem;
+      }
+
+      .form form {
+        width: 25.75em;
+      }
+
+      .contact {
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+      }
+
+      iframe {
+        width: 20rem;
+        height: 15rem;
+      }
 
   footer {
     width: 100vw;
   }
-}
 
 
 /*MEDIA 375
