@@ -7,12 +7,8 @@
   background-color: #163532;
   color: #f9fafa;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
   text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
@@ -42,33 +38,38 @@ p {
   margin: auto;
 }
 
+.navbar {
+  background-color: #333;
+  padding: 0.93rem;
+  text-align: center;
+}
 
-   .navbar {
-      background-color: #333;
-      padding: 15px;
-      text-align: center;
-    }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.93rem;
+  display: inline-block;
+}
 
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 15px;
-      display: inline-block;
-    }
+.nav-links a:hover {
+  background-color: #435b5a;
+  color: #f9fafa;
+  cursor: pointer;
+}
 
-    .menu-icon {
-      display: none;
-      cursor: pointer;
-    }
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
 .topnav a {
   display: block;
   background-color: transparent;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 1.25rem;
+  padding: 1rem;
   text-decoration: none;
-  font-size: 1.5;
+  font-size: 1.5rem;
 }
 
 .centered-text {
@@ -76,9 +77,11 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 3.125rem;
   overflow: hidden;
   background-color: transparent;
+  padding-top: 5rem;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);"
 }
 
 .topnav {
@@ -87,7 +90,7 @@ p {
   z-index: 1000;
   background-color: transparent;
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,12 +98,12 @@ p {
 
 .nav-links {
   background-color: transparent;
-  margin: 30px;
+  margin: 1rem;
   display: flex;
+  gap: 2rem;
 }
 
 .nav-links a {
-  margin-right: 60px;
   text-decoration: none;
   position: relative;
 }
@@ -111,20 +114,23 @@ p {
 
 .topnav a.split1,
 .topnav a.split2 {
-  float: right;
   color: white;
-  border-style: solid;
-  border-radius: 20px;
+  border: solid 1px;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  text-shadow: 1px 1px 2px black;
 }
 .topnav a.split3 {
-  float: right;
   background-color: #435b5a;
   color: white;
-  border-radius: 20px;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  border: solid 1px;
+  
 }
 
 .custom-font {
-  font-size: 60px;
+  font-size: 3.75rem;
   background-color: transparent;
   border: none;
   vertical-align: middle;
@@ -134,15 +140,15 @@ p {
 /*Main
 /*****************************************************************************/
 
-main{
-    display: flex;
-    flex-direction: column;
+main {
+  display: flex;
+  flex-direction: column;
 }
 #slogan {
   display: flex;
   justify-content: center;
-  margin: 100px;
-  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  margin: 6.25rem;
+  text-shadow: 0 0.375em 0.375em rgba(0, 0, 0, 0.25);
 }
 
 .aboutUsImg {
@@ -150,45 +156,32 @@ main{
   height: 35.5rem;
   flex-shrink: 0;
   object-fit: cover;
+  border-radius: 0.625em;
 }
 
 .aboutUsText {
   color: #f9fafa;
   text-align: center;
-  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0.375em 0.375em rgba(0, 0, 0, 0.25);
   font-family: Inknut Antiqua;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-#content1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-top: 50px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
 
-
-
-#content2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-top: 50px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
+#content1,
+#content2,
 #content3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-top: 50px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 3.125em; /* 50px/16px */
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 .aboutUs {
-  padding: 50px;
+  padding: 3.125em;
 }
 
 /*Menu
@@ -456,8 +449,6 @@ form button {
   background-color: #163532;
 }
 
-
-
 #formButton {
   width: 11.25rem;
   height: 3.1rem;
@@ -527,7 +518,6 @@ footer {
   background-color: #435b5a;
 }
 
-
 .footer-bottom p {
   font-size: 1rem;
   word-spacing: 0.2rem;
@@ -545,6 +535,8 @@ footer {
 }
 
 
+/*MEDIA 1024
+/*****************************************************************************/
 @media (max-width: 1024px) {
   #hero {
     position: relative;
@@ -574,31 +566,36 @@ footer {
 }
 
 
-
-
-
-
-
+/*MEDIA 375
+/*****************************************************************************/
 @media (max-width: 375px) {
-  
-  #content1, #content2, #content3 {
+  #content1,
+  #content2,
+  #content3 {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
-  .aboutUs, .aboutUsImg {
+  .aboutUs,
+  .aboutUsImg {
     width: 100%;
   }
 
-  #content1 .aboutUs { order: 2; }
-  #content1 .aboutUsImg { order: 1; }
+  #content1 .aboutUs {
+    order: 2;
+  }
+  #content1 .aboutUsImg {
+    order: 1;
+  }
 
-  #content2 .aboutUs, #content3 .aboutUs {
+  #content2 .aboutUs,
+  #content3 .aboutUs {
     width: 100%;
     order: 1;
   }
 
-  #content2 .aboutUsImg, #content3 .aboutUsImg {
+  #content2 .aboutUsImg,
+  #content3 .aboutUsImg {
     width: 100%;
   }
 
@@ -614,7 +611,7 @@ footer {
     left: 50%;
     width: 1px;
     height: 0;
-    background-color: #1c2020; 
+    background-color: #1c2020;
     transform: translate(-50%, -50%);
   }
 
@@ -647,7 +644,9 @@ footer {
     height: 370px;
   }
 
-  .firstname, .lastname, .role {
+  .firstname,
+  .lastname,
+  .role {
     color: #f9fafa;
     font-family: Jockey One;
     font-size: 24px;
@@ -662,12 +661,12 @@ footer {
     flex-direction: column;
     position: fixed;
     top: 10%;
-    margin-left: 200px; 
+    margin-left: 200px;
     background-color: transparent;
-    height: 100vh; 
-    opacity: 1; 
-    transform: translateY(-100%); 
-    transition: transform 0.s ease-in-out;
+    height: 100vh;
+    opacity: 1;
+    transform: translateY(-100%);
+    transition: transform 0s ease-in-out;
   }
 
   .nav-links.show {
@@ -676,7 +675,7 @@ footer {
   }
 
   .nav-links a {
-    margin: 5px 0; 
+    margin: 5px 0;
     padding: 1em;
     text-decoration: none;
     color: white;
@@ -730,7 +729,7 @@ footer {
     justify-content: center;
     margin: 0.5rem;
   }
-  
+
   #bookATable {
     align-self: center;
     flex-direction: column;
@@ -741,7 +740,7 @@ footer {
     padding: 0;
     gap: 1rem;
   }
-  
+
   .contact {
     width: 100%;
     padding: 1rem 0;
@@ -772,6 +771,4 @@ footer {
     width: 100%;
     height: auto;
   }
-
 }
-

@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-    integrity="your-integrity-code" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">    
-    <script src="buttons.js"defer></script>
+    <script src="buttons.js" defer></script>
     <script src="scroll.js" defer></script>
     <script src="index.js" defer></script>
-
-    
 </head>
 <body>
-
-    <section id="hero" >
+    <section id="hero">
         <div class="heroVideo">
             <video autoplay muted loop id="heroVideo">
                 <source src="./images/heroVideo.mp4" type="video/mp4">
@@ -24,37 +20,25 @@
         </div>
     </section>
 
-
-    
    <section id="navbar" >
         <div class="topnav" >
             <a href="#logo" class="logo">
                 <i class="fa-brands fa-pied-piper-hat fa-3x" style="vertical-align: middle; margin-bottom: 25px; background-color: transparent; border: none;"></i>
                 <span class="custom-font">HAT</span>
             </a>
-                 
             <div class="menu-icon" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-     </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="nav-links" >
-            <a href="#reservations"class="split3">RESERVATIONS</a>
+                <a href="#reservations"class="split3">BOOKING</a>
                 <a href="#menu"class="split2">MENU</a>
                 <a href="#team" class="split1">TEAM</a>
             </div>
         </div>
-        <div class="centered-text" style="padding-top: 80px;     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);">WELCOME TO HAT</div>
-   
+        <div class="centered-text" >WELCOME TO HAT</div>
     </section>
-
-
-
-
-
-
-
-
 
     <main>
       <div id="slogan" >
@@ -84,33 +68,26 @@
       </div>
     </main>
       
-    
     <section id="menu">
-      <div class="winter-menu">
-     <h1>WINTER MENU</h1>
-     </div>
-    <div class="container-menu">
-  <div class="menu-description">
-    <h1>FIVE</h1>
-    <h2>5 COURSE MEAL</h2>
-    <h3>Price 128$</h3>
-    <div id="five-course-menu" class="menu-container"></div>
-  </div>
-  <div class="menu-description">
-    <h1>EIGHT</h1>
-    <h2>TASTING MENU</h2>
-    <h3>Price 189$</h3>
-    <div id="eight-course-menu" class="menu-container"></div>
-  </div>
-</div>
+        <div class="winter-menu">
+            <h1>WINTER MENU</h1>
+        </div>
+        <div class="container-menu">
+            <div class="menu-description">
+            <h1>FIVE</h1>
+            <h2>5 COURSE MEAL</h2>
+            <h3>Price 128$</h3>
+            <div id="five-course-menu" class="menu-container"></div>
+        </div>
+        <div class="menu-description">
+            <h1>EIGHT</h1>
+            <h2>TASTING MENU</h2>
+            <h3>Price 189$</h3>
+            <div id="eight-course-menu" class="menu-container"></div>
+        </div>
+    </section>
 
- </section>
-
-
-
-
-
-     <section id="ourTeamSection">
+    <section id="ourTeamSection">
         <div id="ourTeam"><h1>Our Team Members</h1></div>
         <div id="chefs">
             <div class="chef">
@@ -135,8 +112,7 @@
     </section> 
 
 
- 
-<div class="container">
+    <div class="container">
         <section id="bookATable" >
             <div class="form">
                 <h2>Book a table</h2>
@@ -160,7 +136,6 @@
                             <input type="date" id="date">
                         </div>
                     </div>
-                    
                 <label for="time">Time:</label>
                 <div id="time-slots">
                     <button type="button" class="time-slot" onclick="setActive(this)">17:00</button>
@@ -176,7 +151,6 @@
                     <button type="button" class="time-slot" onclick="setActive(this)">22:00</button>
                     <button type="button" class="time-slot" onclick="setActive(this)">22:30</button>
                 </div>
-                    
                     <button id="formButton" type="submit">Book Now</button>
                 </form>
             </div> 
@@ -192,38 +166,27 @@
                 </div>
         </section>
     </div>
-    </section>
-
-
-
-
-
 
     <footer>
-       <i class="fa-brands fa-pied-piper-hat fa-3x" style="vertical-align: middle; margin-bottom: 25px; background-color: transparent; border: none;"></i>
-                <span class="custom-font">HAT</span>
+        <i class="fa-brands fa-pied-piper-hat fa-3x" style="vertical-align: middle; margin-bottom: 25px; background-color: transparent; border: none;"></i>
+            <span class="custom-font">HAT</span>
         <div class="address">
             <p>Thormøhlens gate 47,</p>
             <p>Tokyo 5000, Japan</p>
-            </div>
-        
+        </div>
         <div class="address1">
-        <p>Tuesday to Sunday 17-24pm</p>
-          </div>
-        
-      <div>
-        
-          <ul class="socials">
-        <li><a href=https://www.facebook.com><i class="fa fa-facebook"></i></a></li>
-        <li><a href=https://www.instagram.com><i class="fa fa-instagram"></i></a></li>
-         <li><a href=https://www.youtube.com><i class="fa fa-youtube"></i></a></li>
-        </ul>
-      </div>
-
-           <div class="footer-bottom">
-  <p>A project by Modul B One</p>
-  
-</div> 
+            <p>Tuesday to Sunday 17-24pm</p>
+        </div>
+        <div>
+            <ul class="socials">
+                <li><a href=https://www.facebook.com><i class="fa fa-facebook"></i></a></li>
+                <li><a href=https://www.instagram.com><i class="fa fa-instagram"></i></a></li>
+                <li><a href=https://www.youtube.com><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>A project by Modul B One</p>
+        </div> 
     </footer>
 </body>
 </html>
