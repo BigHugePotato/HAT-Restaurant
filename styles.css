@@ -579,13 +579,13 @@ footer {
     object-position: left center;
   }
 
-.aboutUsImg1,
+/* .aboutUsImg1,
 .aboutUsImg2,
 .aboutUsImg3 {
     width: 32rem;
     height: 23rem;
 
-  }
+  } */
   .chefImg {
       height: auto;
       width: 100%;
