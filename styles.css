@@ -52,7 +52,7 @@ p {
 }
 
 .nav-links a:hover {
-  background-color: #435b5a;
+  /* background-color: #435b5a; */
   color: #f9fafa;
   cursor: pointer;
 }
@@ -109,7 +109,7 @@ p {
 }
 
 .nav-links a:hover {
-  background-color: #435b5a;
+  /* background-color: #435b5a; */
 }
 
 .topnav a.split1,
