@@ -547,7 +547,21 @@ footer {
   background-color: #435b5a;
 }
 
+/*MEDIA 1422
+/*****************************************************************************/
+@media (max-width: 1422px) {
+.aboutUsImg1,
+.aboutUsImg2,
+.aboutUsImg3 {
+  width: 45rem;
+  height: 35.5rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 0.625em;
+}
 
+
+}
 /*MEDIA 1024
 /*****************************************************************************/
 @media (max-width: 1024px) {
@@ -602,7 +616,6 @@ footer {
     width: 100vw;
   }
 }
-
 
 /*MEDIA 375
 /*****************************************************************************/
