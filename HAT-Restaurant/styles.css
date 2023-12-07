@@ -588,6 +588,7 @@ footer {
   footer {
     width: 100vw;
   }
+}
 
 
 /*MEDIA 375
@@ -684,26 +685,36 @@ footer {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 10%;
-    margin-left: 200px;
-    background-color: transparent;
-    height: 100vh;
+    top: 12%;
+    margin-left: 200px;height: 100vh;
     opacity: 1;
     transform: translateY(-100%);
-    transition: transform 0s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
   }
 
   .nav-links.show {
     display: flex;
     transform: translateY(0);
+    
   }
 
   .nav-links a {
-    margin: 5px 0;
-    padding: 1em;
-    text-decoration: none;
+    margin: -10px 0;
+    padding: 0.3em; 
+    text-decoration: none; */
     color: white;
+    
   }
+  .topnav a.split1,
+  .topnav a.split2,
+  .topnav a.split3 {
+    border: none; 
+    background-color: transparent;
+  }
+  .nav-links a:hover {
+  background-color: #160D08;
+}
 
   /* Hamburger Menu Styling */
   .menu-icon {
