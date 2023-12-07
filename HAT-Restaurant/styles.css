@@ -302,7 +302,6 @@ h1 {
 }
 
 #chefs {
-  border: 1px solid;
   display: flex;
   width: 100%;
   padding: 1.6rem 2rem;
